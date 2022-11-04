@@ -1,0 +1,30 @@
+body {
+    font-family:"Roboto Slab";
+    background-attachment:scroll;
+    margin:2rem 23rem 2rem;
+}
+
+form {
+    background-color:rgb(192, 192, 192, 0.2);
+    border-width:.5rem;
+    border-style:double;
+    border-color:rgb(20, 22, 124);
+    padding:1.2rem 2.5rem 1.2rem;
+}
+
+#contact {
+    margin-left:5rem;
+}
+
+#contactTag {
+    margin-left:11.5rem;
+}
+
+.Button {
+    background-color: rgb(20, 65, 124);
+    color: white;
+    padding:0.5rem;
+    font-size:1rem;
+    border:none;
+    margin-left:14rem;
+}

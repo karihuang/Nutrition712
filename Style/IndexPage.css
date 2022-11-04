@@ -1,0 +1,96 @@
+body {
+    font-family:"Roboto Slab";
+    background-attachment:scroll;
+    border-radius: 1rem;
+    border-width:.5rem;
+    border-style:double;
+    border-color:rgb(20, 22, 124);
+    padding:2rem 4rem 2rem;
+    margin:2rem 6rem 2rem;
+}
+
+#profile {
+    width:120px;
+    position:relative;
+    padding-left:22rem;
+}
+
+.dropbtnMenu {
+    background-color: rgb(20, 65, 124);
+    color: white;
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    padding-left:12rem;
+    padding-top:1rem;
+    display: inline-block;
+}
+  
+.content {
+    display: none;
+    position: absolute;
+    background-color: rgba(20, 65, 124, 0.5);
+    width:5.2rem;
+    font-size: 1.3rem;
+    padding:.5rem;
+}
+
+.contentButton {
+    background-color:none;
+    border:none;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.content a:link {
+    color: rgb(20, 65, 124);
+}
+
+.content a:hover {
+    color: rgb(228, 224, 224);
+}
+
+.Button {
+    background-color: rgb(20, 65, 124);
+    color: white;
+    padding: 0.8rem;
+    font-size: 1.8rem;
+    border: none;
+    margin-left:5rem;
+}
+
+#cover {
+    width:925px;
+    height:475px;
+    padding:0px;
+}
+
+#banner {
+    background-color:rgb(20, 255, 255);
+    color:rgb(12, 46, 119);
+    font-size:1.6rem;
+    font-style:italic;
+    padding:1rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border-radius:1rem;
+}
+
+h2 {
+    color:rgb(20, 65, 124);
+}
+
+iframe {
+    margin:1rem 5rem 1rem;
+}
+
+#contactInfo {
+    margin:1rem 6rem .2rem;
+}
+

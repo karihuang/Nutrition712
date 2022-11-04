@@ -1,0 +1,41 @@
+body {
+    font-family:"Roboto Slab";
+    background-attachment:scroll;
+    border-radius:1rem;
+    border-width:.5rem;
+    border-style:double;
+    border-color:rgb(20, 22, 124);
+    padding:1rem 4rem 1rem;
+    margin:2rem 20rem 2rem;
+}
+
+h1 {
+    text-align:center;
+}
+
+h3 {
+    text-align:center;
+}
+
+#Entry {
+    margin-left:5rem;
+}
+
+#Button1 {
+    background-color: rgb(20, 65, 124);
+    color: white;
+    padding:0.5rem;
+    font-size:1rem;
+    border:none;
+    margin-top:1rem;
+    margin-left:10rem;
+}
+#Button2 {
+    background-color: rgb(20, 65, 124);
+    color: white;
+    padding:0.5rem;
+    font-size:1rem;
+    border:none;
+    margin-top:1rem;
+    margin-left:1rem;
+}

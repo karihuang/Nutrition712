@@ -1,0 +1,35 @@
+body {
+    font-family:"Roboto Slab";
+    background-attachment:scroll;
+    background-color:rgb(247, 244, 231);
+    border-radius:1rem;
+    border-width:.5rem;
+    border-style:double;
+    border-color:rgb(124, 20, 93);
+    padding:1em 5em 1em;
+    margin:2em 6em 2em;
+}
+
+h1 {
+    color:rgb(20, 65, 124);
+    font-size:2.8rem;
+    text-align:center
+}
+
+legend {
+    color:rgb(20, 65, 124);
+    font-size:1rem;
+}
+
+ul, ol {
+    color:rgb(62, 61, 61);
+}
+
+.Button {
+    background-color: rgb(20, 65, 124);
+    color: white;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    border: none;
+    margin-left:25rem;
+}
