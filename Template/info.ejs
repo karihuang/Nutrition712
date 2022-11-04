@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/style/Info.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet" />
+        <link href="/favicon.ico" rel="icon" type="image/x-icon" />
+        <title>Info</title>
+    </head>
+    <body>
+        <h3>Nutrient Information of </h3><h1>Fruits and Vegetables</h1>
+        <form action=<%- infoAddress %> method="post">
+            <label id="Entry">Enter a food/vegetable:&nbsp;<input type="text" required placeholder="apple" name="food"></label>
+            <br>
+            <input type="button" id="Button1" value="HOME" onclick="window.location.href='http://localhost:<%- port %>';">
+            <input type="submit" id="Button2" value="Search">
+        </form>
+    </body>
+</html>

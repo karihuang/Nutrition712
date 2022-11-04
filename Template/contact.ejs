@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/style/Contact.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link href="favicon.ico" rel="icon" type="image/x-icon">
+        <title>Contact</title>
+    </head>
+    <body>
+        <h1>Message to N712</h1>
+        <form action=<%- contactAddress %> method="post">
+            <label for="name"><strong>NAME</strong></label>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="contact" id="contactTag"><strong>CONTACT </strong></label>
+            <br>
+            <input type="text" required id="name" name="name"/>
+            <input type="text" id="contact" name="contact"/>
+            <br><br>
+            <label><strong>EMAIL</strong><br><input type="email" size="60" required name="email"/></label>
+            <br><br>
+            <label><strong>YOUR MESSAGE</strong><br><textarea rows="13" cols="56" required name="info"></textarea></label>
+            <br>
+            <input type="reset"/>
+            <input type="submit"/>
+        </form>
+        <br>
+        <button class="Button" onclick="window.location.href='http://localhost:<%- port %>';">HOME</button>
+    </body>
+</html>

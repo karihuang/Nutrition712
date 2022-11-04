@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script>
+            function printNutrientTable (nutrition) {
+                if (nutrition.Calories === undefined) {
+                    alert(`${food} is not in the database!`);
+                    window.location.href='http://localhost:<%- port %>/info';
+                    return;
+                }
+                home = "window.location.href='http://localhost:<%- port %>';";
+                back = "window.location.href='http://localhost:<%- port %>/info';";
+                document.write('<link rel="stylesheet" href="/style/InfoProcess.css" type="text/css" />');
+                document.write('<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet" />');
+                document.write('<link href="favicon.ico" rel="icon" type="image/x-icon" />');
+                document.write('<title>Show Info</title>');
+                document.write("<h1>Nutrition table of " + food.toUpperCase() + "</h1>")
+                document.write("<table border='1'><thead><tr><th>Nutrition</th><th>Value</th></tr></thead><tbody>");
+                document.write(`<tr><td>Calories</td><td>${nutrition.Calories}</td></tr>`);
+                document.write(`<tr><td>Water</td><td>${nutrition.Water}</td></tr>`);
+                document.write(`<tr><td>Protein</td><td>${nutrition.Protein}</td></tr>`);
+                document.write(`<tr><td>Carbs</td><td>${nutrition.Carbs}</td></tr>`);
+                document.write(`<tr><td>Sugar</td><td>${nutrition.Sugar}</td></tr>`);
+                document.write(`<tr><td>Fiber</td><td>${nutrition.Fiber}</td></tr>`);
+                document.write(`<tr><td>Fat</td><td>${nutrition.Fat}</td></tr>`);
+                document.write("</tbody></table><br>");
+                document.write(`<button id="Button1" onclick=${home}>HOME</button>`);
+                document.write(`<button id="Button2" onclick=${back}>BACK</button>`);
+            }
+            food = '<%- food %>';
+                const options = {
+                    method: 'GET',
+                    headers: {
+                        'X-RapidAPI-Host': 'fit-life-food.p.rapidapi.com',
+                        'X-RapidAPI-Key': 'e9352723e4msh80e0ba637042f8ap1dd5f8jsnb4e72f3f7834'
+                    }
+                };
+                fetch(`https://fit-life-food.p.rapidapi.com/nutrition/${food}`, options)
+                .then(response => response.json())
+                .then(response => printNutrientTable(response))
+                .catch(err => console.error(err));
+        </script>
+    </body>
+</html>
