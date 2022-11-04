@@ -1,4 +1,4 @@
-# Nutrition712
+# Nutrition 712
 
 <ul>
 <li>This is a website for Nutrition712, a smoothie and juice bar in Council Bluffs, Iowa (my host parent own this shop!)</li>
